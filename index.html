@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript"  src="utils.js"></script>
+	
+	<script type="text/javascript"  src="database.js"></script>
+	<script type="text/javascript"  src="imageOperations.js"></script>
+	<script type="text/javascript"  src="filehandler.js"></script>
+	<script type="text/javascript"  src="main.js"></script>
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="canvasDiv">
+			<canvas id="mycanvas" width="600" height="600"></canvas>
+			<div>
+			<input type="checkbox"/>
+			<button>Filtr1</button>
+			<input type="checkbox"/>
+			<button>Filtr2</button>
+			</div>
+		</div>
+		<div id="DBDiv">
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	 window.addEventListener("load", init, false); 
+</script>
+</html>
