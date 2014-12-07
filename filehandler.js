@@ -25,7 +25,7 @@ var reader = new FileReader();
 reader.onload = function(e) { 
 	log(TAG,reader.result);
 	text=reader.result;
-	putTextOnCanvas();
+	Refresh();
 }
 reader.readAsText(file);
 }
@@ -43,7 +43,8 @@ var reader = new FileReader();
             	img.src = e.target.result;
             	img.onload = function  () {
             		image=img;
-            		putImageOnCanvas();
+                imageORG=img;
+            		Refresh();
             	 };
 
             };	

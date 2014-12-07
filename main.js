@@ -12,6 +12,8 @@ function init() {
   ctx.rect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "black";
   ctx.fill();
+
+  initDB();
   log(TAG, "end");
 }
 // DRAG EVENTS
